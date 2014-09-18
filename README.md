@@ -21,34 +21,17 @@ This package extends Laravel's FormBuilder to include some (soon all) HTML5 elem
     ```
 
 
-## Supported Elements
+## Usage / Supported Element Types
 
-Since the package extends the default FormBuilder, you can just use Form::field() like you would normally but with the following supported items: 
-
-- [ ] color
-- [ ] date
-- [ ] datetime
-- [ ] datetime-local
-- [ ] email
-- [ ] month
-- [x] number
-- [ ] range
-- [ ] search
-- [ ] tel
-- [ ] time
-- [ ] url
-- [ ] week
-
-
-## Usage
-
-Think of generators as an easy way to speed up your workflow. Rather than opening the models directory, creating a new file, saving it, and adding the class, you can simply run a single generate command.
+Since the package extends the default FormBuilder, you can just use Form::field() like you would normally but with the following supported items.
 
 - [Color](#color)
 - [Date](#date)
+- [Time](#time)
 - [Datetime](#datetime)
 - [Datetime-local](#datetime-local)
 - [Email](#email)
+- [Week](#week)
 - [Month](#month)
 - [Number](#number)
 - [Range](#range)
@@ -56,31 +39,56 @@ Think of generators as an easy way to speed up your workflow. Rather than openin
 - [Tel](#tel)
 - [Time](#time)
 - [URL](#url)
-- [Week](#week)
 
 ### Color
 
-To be added..
+```php
+Form::color($name, $value = null, $options = array())
+```
 
 ### Date
 
-To be added..
+```php
+Form::date($name, $min = null, $max = null, $options = array())
+```
+
+This field requires you input atleast min or max or both fields.
+
+### Time
+
+```php
+Form::time($name, $options = array())
+```
 
 ### Datetime
 
-To be added..
+```php
+Form::datetime($name, $options = array())
+```
 
 ### Datetime-local
 
-To be added..
+```php
+Form::datetime_local($name, $options = array())
+```
 
 ### Email
 
-To be added..
+```php
+Form::email($name, $value = null, $options = array())
+```
+
+### Week
+
+```php
+Form::week($name, $value = null, $options = array())
+```
 
 ### Month
 
-To be added..
+```php
+Form::month($name, $value = null, $options = array())
+```
 
 ### Number
 
@@ -92,30 +100,33 @@ To specify a min/max range, add ```'minmax' => '0|10'``` to your options array. 
 
 **Tip**: To not output min/max, specify in options array 'minmax' => false
 
-
 ### Range
 
-To be added..
+```php
+Form::range($name, $value = null, $options = array())
+```
+
+To specify a min/max range, add ```'minmax' => '0|10'``` to your options array. By default if no minmax is specified, it is min 0 and max 10.
+
+**Tip**: To not output min/max, specify in options array 'minmax' => false
 
 ### Search
 
-To be added..
+```php
+Form::search($name, $value = null, $options = array())
+```
 
 ### Tel
 
-To be added..
-
-### Time
-
-To be added..
+```php
+Form::tel($name, $value = null, $options = array())
+```
 
 ### URL
 
-To be added..
-
-### Week
-
-To be added..
+```php
+Form::url($name, $value = null, $options = array())
+```
 
 
 ## Reporting Bugs or Feature Requests

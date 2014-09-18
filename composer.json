@@ -1,0 +1,24 @@
+{
+    "name": "braunson/laravel-html5-forms",
+    "description": "This package extends Laravel's FormBuilder to include some (soon all) HTML5 elements",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Braunson Yager",
+            "email": "braunson@geekybeaver.ca"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Braunson\\LaravelHTML5Forms\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
