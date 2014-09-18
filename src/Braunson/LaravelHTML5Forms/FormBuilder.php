@@ -205,7 +205,6 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
 		// min and max attributes, using sane defaults if these do not exist on
 		// the attributes array. We'll then return this entire options array back.
 		$min = array_get($options, 'min', 0);
-
 		$max = array_get($options, 'max', 10);
 
 		return array_merge($options, compact('min', 'max'));
@@ -220,7 +219,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
 	protected function setQuickNumberMinMax($options)
 	{
 		$segments = explode('|', $options['minmax']);
-
+        
 		return array_merge($options, array('min' => $segments[0], 'max' => $segments[1]));
 	}
     
