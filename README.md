@@ -63,13 +63,13 @@ Form::time($name, $options = array())
 ### Datetime
 
 ```php
-Form::datetime($name, $options = array())
+Form::dateTime($name, $options = array())
 ```
 
 ### Datetime-local
 
 ```php
-Form::datetime_local($name, $options = array())
+Form::dateTimeLocal($name, $options = array())
 ```
 
 ### Email
