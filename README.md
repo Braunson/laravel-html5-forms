@@ -138,7 +138,7 @@ Please report any bugs or feature requests on the github issues page for this pr
 
 ## Contributing
 
--   [Fork](https://help.github.com/articles/fork-a-repo) the [FatsecretLaravel on github](https://github.com/braunson/laravel-html5-forms)
+-   [Fork](https://help.github.com/articles/fork-a-repo) the [Laravel-HTML5-Forms on github](https://github.com/braunson/laravel-html5-forms)
 -   Commit and push until you are happy with your contribution
 -   Run the tests to make sure they all pass: `composer install && ./vendor/bin/phpunit`
 -   [Make a pull request](https://help.github.com/articles/using-pull-requests)
