@@ -53,7 +53,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
      * @param  array   $options
      * @return string
      */
-    public function datetime($name, $options = array())
+    public function dateTime($name, $options = array())
     {        
 		return $this->input('datetime', $name, null, $options);
     }
@@ -65,7 +65,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
      * @param  array   $options
      * @return string
      */
-    public function datetime_local($name, $options = array())
+    public function dateTimeLocal($name, $options = array())
     {        
 		return $this->input('datetime-local', $name, null, $options);
     }
