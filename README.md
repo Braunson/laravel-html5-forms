@@ -93,7 +93,7 @@ Form::month($name, $value = null, $options = array())
 ### Number
 
 ```php
-Form::number($name, $value = null, $options = array())
+Form::number($name, $value = null, $step = null, $options = array())
 ```
 
 To specify a min/max range, add ```'minmax' => '0|10'``` to your options array. By default if no minmax is specified, it is min 0 and max 10.
