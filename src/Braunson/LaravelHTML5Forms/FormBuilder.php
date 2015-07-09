@@ -19,19 +19,20 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
      * Create a form date field.
      *
      * @param  string  $name
+     * @param  date    $value
      * @param  date    $min
      * @param  date    $max
      * @param  array   $options
      * @return string
      */
-    public function date($name, $min = null, $max = null, $options = array())
+    public function date($name, $value = null, $min = null, $max = null, $options = array())
     {
         if( !isset($min) && !isset($max) ) return 'The date field "'.$name.'" must have a min, max or both.';
         
         if( isset($min) ) $options['min'] = $min;
         if( isset($max) ) $options['max'] = $max;
         
-		return $this->input('date', $name, null, $options);
+		return $this->input('date', $name, $value, $options);
     }
     
     /**
